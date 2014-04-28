@@ -1,0 +1,23 @@
+Source: php-finder-facade
+Section: php
+Priority: optional
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Uploaders: David Prévot <taffit@debian.org>,
+           Prach Pongpanich <prachpub@gmail.com>
+Build-Depends: debhelper (>= 9), pear-channels, pkg-php-tools (>= 1.1~)
+Standards-Version: 3.9.5
+Homepage: https://github.com/sebastianbergmann/finder-facade
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-finder-facade.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/php-finder-facade.git
+
+Package: php-finder-facade
+Architecture: all
+Depends: ${misc:Depends}, ${phppear:Debian-Depends}
+Recommends: ${phppear:Debian-Recommends}
+Breaks: ${phppear:Debian-Breaks}
+Description: ${phppear:summary}
+ Finder provides an intuitive fluent interface to find files and
+ directories on a filesystem.
+ .
+ Symfony is a PHP framework, a set of tools and a development
+ methodology.
