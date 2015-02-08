@@ -1,2 +1,4 @@
 version=3
-http://pear.phpunit.de/ http://pear.phpunit.de/get/FinderFacade-([\d\.]+)\.tgz
+options=uversionmangle=s/-?([^\d.])\.?/~$1/i;tr/A-Z/a-z/ \
+https://github.com/sebastianbergmann/finder-facade/releases \
+.*/archive/v?(\d.+).tar.gz
