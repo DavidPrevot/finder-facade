@@ -1,0 +1,21 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <david@tilapin.org>
+Date: Sun, 8 Feb 2015 20:57:20 -0400
+Subject: Update phpdox.xml
+
+Forwarded: no
+---
+ build/phpdox.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/build/phpdox.xml b/build/phpdox.xml
+index adf2fdd..fcffde4 100644
+--- a/build/phpdox.xml
++++ b/build/phpdox.xml
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8" ?>
+ 
+-<phpdox xmlns="http://phpdox.de/config">
++<phpdox xmlns="http://xml.phpdox.net/config">
+  <project name="FinderFacade" source="../src" workdir="phpdox">
+   <collector publiconly="false">
+    <include mask="*.php" />

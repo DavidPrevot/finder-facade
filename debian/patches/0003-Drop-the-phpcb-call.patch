@@ -1,0 +1,24 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <david@tilapin.org>
+Date: Sun, 8 Feb 2015 20:58:17 -0400
+Subject: Drop the phpcb call
+
+PHP_CodeBrowser is not (yet?) packaged in Debian.
+
+Forwarded: not-needed
+---
+ build.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/build.xml b/build.xml
+index f67e7fe..78f5f38 100644
+--- a/build.xml
++++ b/build.xml
+@@ -8,7 +8,7 @@
+    depends="prepare,phpdox"/>
+ 
+  <target name="test"
+-   depends="lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,phpcb"/>
++   depends="lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit"/>
+ 
+  <target name="build-parallel"
+    depends="prepare,lint,tools-parallel,phpunit,phpcb"/>

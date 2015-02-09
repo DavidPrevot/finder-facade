@@ -1,0 +1,34 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <david@tilapin.org>
+Date: Sun, 8 Feb 2015 21:18:49 -0400
+Subject: =?utf-8?q?Finder_doesn=E2=80=99t_provide_an_autoloader_anymore?=
+
+Forwarded: no
+---
+ src/autoload.php    | 1 -
+ src/autoload.php.in | 1 -
+ 2 files changed, 2 deletions(-)
+
+diff --git a/src/autoload.php b/src/autoload.php
+index d61293e..f4d2b6b 100644
+--- a/src/autoload.php
++++ b/src/autoload.php
+@@ -41,7 +41,6 @@
+  * @since     File available since Release 1.0.0
+  */
+ 
+-require_once 'Symfony/Component/Finder/autoloader.php';
+ require_once 'TheSeer/fDOMDocument/autoload.php';
+ 
+ // @codingStandardsIgnoreFile
+diff --git a/src/autoload.php.in b/src/autoload.php.in
+index 883d755..90a7363 100644
+--- a/src/autoload.php.in
++++ b/src/autoload.php.in
+@@ -41,7 +41,6 @@
+  * @since     File available since Release 1.0.0
+  */
+ 
+-require_once 'Symfony/Component/Finder/autoloader.php';
+ require_once 'TheSeer/fDOMDocument/autoload.php';
+ 
+ // @codingStandardsIgnoreFile

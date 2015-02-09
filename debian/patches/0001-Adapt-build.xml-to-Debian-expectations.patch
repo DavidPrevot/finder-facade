@@ -1,0 +1,40 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <david@tilapin.org>
+Date: Sun, 8 Feb 2015 20:49:14 -0400
+Subject: Adapt build.xml to Debian expectations
+
+Git-Dch: Ignore
+---
+ build.xml | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/build.xml b/build.xml
+index a9f7ff4..f67e7fe 100644
+--- a/build.xml
++++ b/build.xml
+@@ -5,7 +5,10 @@
+  <property name="phpunit" value="phpunit"/>
+ 
+  <target name="build"
+-   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,phpcb,phpdox"/>
++   depends="prepare,phpdox"/>
++
++ <target name="test"
++   depends="lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,phpcb"/>
+ 
+  <target name="build-parallel"
+    depends="prepare,lint,tools-parallel,phpunit,phpcb"/>
+@@ -34,12 +37,13 @@
+   <delete file="${basedir}/build/ChangeLog.markdown"/>
+   <delete file="${basedir}/build/LICENSE"/>
+   <delete file="${basedir}/build/README.markdown"/>
++  <delete file="${basedir}/cache.properties"/>
+   <delete>
+    <fileset dir="${basedir}/build" includes="**/*.tgz"/>
+   </delete>
+  </target>
+ 
+- <target name="prepare" depends="clean,phpab"
++ <target name="prepare" depends="phpab"
+          description="Prepare for build">
+   <mkdir dir="${basedir}/build/api"/>
+   <mkdir dir="${basedir}/build/code-browser"/>
