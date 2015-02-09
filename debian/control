@@ -23,11 +23,24 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/php-finder-facade.git
 Package: php-finder-facade
 Architecture: all
 Depends: ${misc:Depends}, ${phpcomposer:Debian-require}
-Suggests: ${phpcomposer:Debian-suggest}
+Suggests: php-finder-facade-doc, ${phpcomposer:Debian-suggest}
 Replaces: ${phpcomposer:Debian-replace}
 Breaks: ${phpcomposer:Debian-conflict}, ${phpcomposer:Debian-replace}
 Provides: ${phpcomposer:Debian-provide}
 Description: convenience wrapper for Symfony's Finder component
+ Finder provides an intuitive fluent interface to find files and
+ directories on a filesystem.
+ .
+ Symfony is a PHP framework, a set of tools and a development
+ methodology.
+
+Package: php-finder-facade-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: convenience wrapper for Symfony's Finder component - documentation
+ This package contains the documentation for FinderFacade.
+ .
  Finder provides an intuitive fluent interface to find files and
  directories on a filesystem.
  .

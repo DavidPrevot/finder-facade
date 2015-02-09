@@ -1,0 +1,9 @@
+Document: php-finder-facade-doc
+Title: FinderFacade API Documentation
+Abstract: This is the API Documentation for FinderFacade, a convenience
+ wrapper for Symfony's Finder component
+Section: Programming/PHP
+
+Format: HTML
+Index: /usr/share/doc/php-finder-facade/api/index.xhtml
+Files: /usr/share/doc/php-finder-facade/api/*
