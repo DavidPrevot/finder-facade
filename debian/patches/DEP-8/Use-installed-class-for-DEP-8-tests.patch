@@ -1,0 +1,19 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <david@tilapin.org>
+Date: Mon, 9 Feb 2015 12:50:19 -0400
+Subject: Use installed class for DEP-8 tests
+
+Gbp: Topic DEP-8
+---
+ vendor/autoload.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/vendor/autoload.php b/vendor/autoload.php
+index 97df675..d04c423 100644
+--- a/vendor/autoload.php
++++ b/vendor/autoload.php
+@@ -6,4 +6,4 @@
+ $loader->register();
+ $loader->addPrefixes(array(
+ ));
+-require __DIR__ . '/../src/autoload.php';
++require_once 'SebastianBergmann/FinderFacade/autoload.php';
