@@ -6,7 +6,7 @@ Uploaders: David Prévot <taffit@debian.org>,
            Prach Pongpanich <prachpub@gmail.com>
 Build-Depends: ant,
                debhelper (>= 9),
-               pdepend (<< 2),
+               pdepend,
                php-codesniffer,
                phpab,
                phpcpd,
