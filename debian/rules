@@ -9,6 +9,9 @@ else
 	@echo "** tests disabled"
 endif
 
+override_dh_compress:
+	dh_compress -X.xhtml
+
 override_dh_install:
 	dh_install -X.php.in
 
