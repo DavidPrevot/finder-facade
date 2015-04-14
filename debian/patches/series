@@ -1,6 +1,5 @@
 0001-Adapt-build.xml-to-Debian-expectations.patch
 0002-Update-phpdox.xml.patch
 0003-Drop-the-phpcb-call.patch
-0004-Use-ClassLoader-from-Symfony-on-top-of-autoload.patch
 0004-Adapt-to-actual-autoload.php-filename.patch
 0006-Workaround-the-lack-of-phpunit.xml-file.patch
