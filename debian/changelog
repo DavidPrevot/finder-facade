@@ -1,3 +1,13 @@
+php-finder-facade (1.1.0+comp-1) unstable; urgency=medium
+
+  * Adapt packaging to Composer source
+  * Bump standards version to 3.9.6
+  * Provide API documentation
+  * Provide DEP-8 tests
+  * Depend on recent php-symfony-finder
+
+ -- David Prévot <taffit@debian.org>  Tue, 14 Apr 2015 15:18:54 -0400
+
 php-finder-facade (1.1.0-1) unstable; urgency=low
 
   * Initial Release (Closes: #746296)
