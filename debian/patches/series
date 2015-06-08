@@ -1,5 +1,0 @@
-0001-Adapt-build.xml-to-Debian-expectations.patch
-0002-Update-phpdox.xml.patch
-0003-Drop-the-phpcb-call.patch
-0004-Adapt-to-actual-autoload.php-filename.patch
-0005-Workaround-the-lack-of-phpunit.xml-file.patch

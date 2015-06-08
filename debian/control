@@ -6,13 +6,10 @@ Uploaders: David Prévot <taffit@debian.org>,
            Prach Pongpanich <prachpub@gmail.com>
 Build-Depends: ant,
                debhelper (>= 9),
-               pdepend,
-               php-codesniffer,
+               php-fdomdocument,
+               php-symfony-finder (>= 2.4),
                phpab,
-               phpcpd,
                phpdox,
-               phploc,
-               phpmd,
                phpunit,
                pkg-php-tools (>= 1.7~)
 Standards-Version: 3.9.6
