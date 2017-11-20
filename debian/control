@@ -7,7 +7,7 @@ Uploaders: David Prévot <taffit@debian.org>,
 Build-Depends: ant,
                debhelper (>= 9),
                php-fdomdocument,
-               php-symfony-finder (>= 2.4),
+               php-symfony-finder,
                phpab,
                phpdox,
                phpunit,
@@ -19,9 +19,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/php-finder-facade.git
 
 Package: php-finder-facade
 Architecture: all
-Depends: php-symfony-finder (>= 2.4),
-         ${misc:Depends},
-         ${phpcomposer:Debian-require}
+Depends: ${misc:Depends}, ${phpcomposer:Debian-require}
 Suggests: php-finder-facade-doc, ${phpcomposer:Debian-suggest}
 Replaces: ${phpcomposer:Debian-replace}
 Breaks: ${phpcomposer:Debian-conflict}, ${phpcomposer:Debian-replace}
